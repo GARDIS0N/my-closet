@@ -1,0 +1,26 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+.vercel
+
+# Secrets & Private Keys
+*service-account*.json
+*credentials*.json
+*.pem
+*.key
+*.pfx
+*.backup.*
+.backup_*
+scratch/
+isair-jarvis*
+*.zip
+Desktop/
+supabase/.temp/
+backups/
+

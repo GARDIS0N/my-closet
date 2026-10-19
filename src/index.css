@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  /* Cream & Off-White Palette */
+  --color-cream-base: #FAF7F2;
+  --color-cream-surface: #FFFFFF;
+  --color-cream-muted: #F3EFEA;
+  --color-cream-border: #E8E2D8;
+  --color-cream-border-subtle: #ECE6DD;
+
+  /* Charcoal Typography */
+  --color-charcoal-primary: #1C1917;
+  --color-charcoal-secondary: #44403C;
+  --color-charcoal-muted: #78716C;
+  --color-charcoal-light: #A8A29E;
+
+  /* Forest Green Accents */
+  --color-forest: #1E392A;
+  --color-forest-dark: #15291E;
+  --color-forest-light: #2D5A43;
+  --color-forest-surface: #EBF3EE;
+  --color-forest-border: #C8DDD0;
+
+  /* Luxury Gold Accent */
+  --color-gold: #C2A674;
+  --color-gold-light: #F7F3EB;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--color-cream-base);
+  color: var(--color-charcoal-primary);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, .font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Touch friendly minimums & mobile viewport keyboard handling */
+button, input, textarea, select {
+  touch-action: manipulation;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D7D0C5;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B0A2;
+}
+
+/* Skeleton animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #F3EFEA 25%, #EBE5DC 50%, #F3EFEA 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite;
+}
