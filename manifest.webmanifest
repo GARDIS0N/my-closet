@@ -1,0 +1,27 @@
+{
+  "name": "Jifuno — CBC Gamified Learning",
+  "short_name": "Jifuno",
+  "description": "Gamified learning app for Kenya's CBC curriculum (Grades 3–6) with interactive quests and Rafiki AI tutor.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#06140F",
+  "theme_color": "#06140F",
+  "categories": ["education", "kids", "games"],
+  "lang": "en-KE",
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
